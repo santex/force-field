@@ -1,0 +1,118 @@
+	  	<script type="text/javascript" src="js/third_party/d3/d3.min.js"></script>
+	  	<script type="text/javascript" src="../../js/jquery.min.js"></script>
+
+						<table style="width:100%;margin-top:1%;background-color:#fff;" border="0">
+							<tr><td>
+	  							<b>EEG & ENV</b>
+	  							</td>
+	  							
+								<td  valign="top">
+									<svg id="phasorSum2" class="svgWithText" width="100%" height="150" style="margin: 0px;"></svg>
+									<script>
+										var SUPER_AMP_1 = 0.4;
+										var SUPER_AMP_2 = 0.8;
+										var SUPER_AMP_3 = 0.7;
+										var SUPER_AMP_4 = 0.6;
+										var SUPER_AMP_5 = 0.5;
+										var SUPER_AMP_6 = 0.4;
+										var SUPER_AMP_7 = 0.3;
+										var SUPER_AMP_8 = 0.2;
+										var SUPER_AMP_9 = 0.1;
+										var SUPER_AMP_10 = 0.05;
+										
+									</script>
+									<script type="text/javascript" src="js/inverse_fourier_transform.js"></script>
+						</td>
+						<td valign="top" width="100">						
+									<table  border="0" style="display:none;">
+										<tr>
+											<td style="text-align: center;">
+											<div>
+												<!-- <label >Harmonic 1</label><br/> -->
+												<input type=range min=0 max=100 value=10 id=ampFader1 step=1 oninput="SUPER_AMP_1 = value / 200" style="width: 70px">
+											</div>
+											</td>
+										
+											<td style="text-align: center;">
+											<div>
+												<!-- <label >Harmonic 2</label><br/> -->
+												<input type=range min=0 max=100 value=20 id=ampFader1 step=1 oninput="SUPER_AMP_2 = value / 200" style="width: 70px">
+											</div>
+											</td>
+										
+											<td style="text-align: center;">
+											<div>
+												<!-- <label >Harmonic 3</label><br/> -->
+												<input type=range min=0 max=100 value=30 id=ampFader1 step=1 oninput="SUPER_AMP_3 = value / 200" style="width: 70px">
+											</div>
+											</td>
+										</tr>
+										<tr>
+											<td style="text-align: center;">
+											<div>
+												<!-- <label >Harmonic 4</label><br/> -->
+												<input type=range min=0 max=100 value=40 id=ampFader1 step=1 oninput="SUPER_AMP_4 = value / 200" style="width: 70px">
+											</div>
+											</td>
+										
+											<td style="text-align: center;">
+											<div>
+												<!-- <label >Harmonic 5</label><br/> -->
+												<input type=range min=0 max=100 value=50 id=ampFader1 step=1 oninput="SUPER_AMP_5 = value / 200" style="width: 70px">
+											</div>
+											</td>
+										
+											<td style="text-align: center;">
+											<div>
+												<!-- <label >Harmonic 5</label><br/> -->
+												<input type=range min=0 max=100 value=60 id=ampFader1 step=1 oninput="SUPER_AMP_6 = value / 200" style="width: 70px">
+											</div>
+											</td>
+										</tr>
+										<tr>
+											<td style="text-align: center;">
+											<div>
+												<!-- <label >Harmonic 1</label><br/> -->
+												<input type=range min=0 max=100 value=70 id=ampFader1 step=1 oninput="SUPER_AMP_7 = value / 200" style="width: 70px">
+											</div>
+											</td>
+										
+											<td style="text-align: center;">
+											<div>
+												<!-- <label >Harmonic 2</label><br/> -->
+												<input type=range min=0 max=100 value=80 id=ampFader1 step=1 oninput="SUPER_AMP_8 = value / 200" style="width: 70px">
+											</div>
+											</td>
+										
+											<td style="text-align: center;">
+											<div>
+												<!-- <label >Harmonic 3</label><br/> -->
+												<input type=range min=0 max=100 value=90 id=ampFader1 step=1 oninput="SUPER_AMP_9 = value / 200" style="width: 70px">
+											</div>
+											</td>
+										</tr>
+										<tr>
+											<td style="text-align: center;" colspan=3>
+											<div>
+												<!-- <label >Harmonic 4</label><br/> -->
+												<input type=range min=0 max=100 value=100 id=ampFader1 step=1 oninput="SUPER_AMP_10 = value / 200" style="width: 70px">
+											</div>
+											</td>
+										</tr>
+									</table>
+	  							</td>
+	  							
+							</tr>
+	  				</table><br/>
+
+
+	  						</td>
+				<td class="figureExplanation" style="">
+
+				</td>
+			</tr>
+		</table>
+
+<script>
+
+</script>
