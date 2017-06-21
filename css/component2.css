@@ -1,0 +1,84 @@
+.cbp-qtrotator {
+	font-size: 1.5em;
+	position: absolute;
+	margin: 0px;
+	width:33%;
+	right:0px;
+	top:70px;
+}
+
+.cbp-qtrotator .cbp-qtcontent {
+	position: absolute;
+	height: 400px;
+	padding: 2em;
+	top: 10px;
+
+	z-index: 0;
+	opacity: 0;
+	width: 100%;
+}
+
+.no-js .cbp-qtrotator .cbp-qtcontent {
+	border-bottom: none;
+}
+
+.cbp-qtrotator .cbp-qtcontent.cbp-qtcurrent,
+.no-js .cbp-qtrotator .cbp-qtcontent {
+	position: relative; 
+	z-index: 100;
+	pointer-events: auto;
+	opacity: 1;
+}
+
+.cbp-qtrotator .cbp-qtcontent:before,
+.cbp-qtrotator .cbp-qtcontent:after {
+	content: " ";
+	display: table;
+}
+
+.cbp-qtrotator .cbp-qtcontent:after {
+	clear: both;
+}
+
+.cbp-qtprogress {
+	position: absolute;
+	background: #47a3da;
+	height: 1px;
+	width: 0%;
+	display:none;
+	top: 0;
+	z-index: 1000;
+}
+
+.cbp-qtrotator blockquote {
+	margin: 0;
+	padding: 0;
+}
+
+.cbp-qtrotator blockquote p {
+	font-size: 1em;
+	color: #000;
+	font-weight: 300;
+	margin: 0.4em 0 1em;
+}
+
+
+
+.cbp-qtrotator blockquote b {
+	text-decoration: underline;
+}
+
+
+
+/* Example for media query */
+@media screen and (max-width: 30.6em) { 
+
+	.cbp-qtrotator {
+		font-size: 70%;
+	}
+
+	.cbp-qtrotator img {
+		width: 80px;
+	}
+
+}
